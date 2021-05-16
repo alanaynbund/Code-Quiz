@@ -50,14 +50,16 @@ var intervalId;
 function preQuiz() {
     preQDiv = document.createElement("div");
     preH2 = document.createElement("h2");
-    preH2.textContent = "Welcome to the code Quiz! Please enter your name!";
+    preH2.textContent = "Welcome to the Code Quiz! Please enter your name!";
     preQDiv.appendChild(preH2);
 
     preInput = document.createElement("input");
+    preInput.className = "prequiz";
     preInput.setAttribute ("type", "text", "placeholder = Enter your name");
     preQDiv.appendChild (preInput);
 
     preButton = document.createElement("button");
+    preButton.className = "prebutton"
     preButton.textContent = "Start Quiz!"
     preQDiv.appendChild(preButton);
 
@@ -66,8 +68,6 @@ function preQuiz() {
     preButton.addEventListener("click", remove);
     preButton.addEventListener("click", savePlayer);
     contentEl.append(preQDiv);
-
-    
 };
 
 function remove() {
@@ -79,7 +79,9 @@ function remove() {
 function endQuiz() {
     clearInterval(intervalId);
     var body = document.body;
-    body.innerHTML = "Game over, You scored " + correctCount;
+    body.innerHTML = "Game over, " + preInput.value + " scored " + correctCount;
+    body.className = "endtext";
+    
     saveCount();
 }
 
