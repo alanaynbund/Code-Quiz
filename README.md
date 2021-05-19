@@ -15,3 +15,6 @@ I made a coding quiz that renders multiple questions and checks the correct valu
 ![2](/assets/quiz2.png)
 
 ![3](/assets/quiz3.png)
+
+# Deployed Link
+https://alanaynbund.github.io/Code-Quiz/
