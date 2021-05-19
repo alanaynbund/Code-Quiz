@@ -11,5 +11,7 @@ I made a coding quiz that renders multiple questions and checks the correct valu
 # Screenshots
 
 ![1] (/assets/quiz1.png)
+
 ![2] (/assets/quiz2.png)
+
 ![3] (/assets/quiz3.png)
